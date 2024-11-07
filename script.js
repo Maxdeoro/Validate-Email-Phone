@@ -6,16 +6,6 @@ const validateEmail = (email) => {
       );
   };
 
-// function checkEmail() {
-//     const mail = document.form1.email.value;
-//     console.log(mail);
-//     if(validateEmail(mail)) {
-//         window.alert('It`s OK !');
-//     } else {
-//         window.alert('Email incorrect !');
-//     }
-// };
-
 function checkEmail() {
   const mail = document.form1.email.value;
 
