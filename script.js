@@ -6,12 +6,22 @@ const validateEmail = (email) => {
       );
   };
 
+// function checkEmail() {
+//     const mail = document.form1.email.value;
+//     console.log(mail);
+//     if(validateEmail(mail)) {
+//         window.alert('It`s OK !');
+//     } else {
+//         window.alert('Email incorrect !');
+//     }
+// };
+
 function checkEmail() {
-    const mail = document.form1.email.value;
-    console.log(mail);
-    if(validateEmail(mail)) {
-        window.alert('It`s OK !');
-    } else {
-        window.alert('Email incorrect !');
-    }
+  const mail = document.form1.email.value;
+
+  if(validateEmail(mail)) {
+    document.getElementById('span1').innerText = 'It s OK !';
+  } else {
+    document.getElementById('span1').innerText = 'Incorrect email !';
+  }
 };
